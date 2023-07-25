@@ -13,29 +13,19 @@ video::rAteGra5-xM[youtube]
 endif::[]
 
 == Overview
-AutoMerge is an autonomous multi-agent map merging system, which can provide offline/online data association and global mapping estimation without any GPS assistance. The AutoMerge server platform will provide the service for AutoMerge, where users can upload individual trajectory segments, and AutoMerge can help generate the target global map.
+The visual camera is an attractive device in beyond visual line of sight (B-VLOS) drone operation, since they are low in size, weight, power, and cost, and can provide redundant modality to GPS failures. However, state-of-the-art visual localization algorithms are unable to match visual data that have a significantly different appearance due to illuminations or viewpoints. This paper presents iSimLoc, a condition/viewpoint consistent hierarchical global re-localization approach. The place features of iSimLoc can be utilized to search target images under changing appearances and viewpoints. Additionally, our hierarchical global re-localization module refines in a coarse-to-fine manner, allowing iSimLoc to perform a fast and accurate estimation. 
 
-== Supports
-In the release version of AutoMerge, we will support the following LiDAR odometry:
-
-* *https://github.com/hku-mars/FAST_LIO*
-* *https://github.com/TixiaoShan/LIO-SAM*
-* *https://github.com/RobustFieldAutonomyLab/LeGO-LOAM*
-
-And we are also think about expending the supports for visual odometry long large-scale map merging, the potential list includes:
-
-* *https://github.com/UZ-SLAMLab/ORB_SLAM3*
-* *https://github.com/HKUST-Aerial-Robotics/VINS-Mono*
-* *https://github.com/uzh-rpg/rpg_svo_pro_open*
-* *https://github.com/KumarRobotics/msckf_vio*
 
 == Citation
-If you use this code for your research, please cite our papers. *https://arxiv.org/pdf/2207.06965.pdf*
+If you use this code for your research, please cite our papers. *https://arxiv.org/abs/2209.06376*
 
 [quote]
-@article{yin2022automerge,
-  title={AutoMerge: A Framework for Map Assembling and Smoothing in City-scale Environments},
-  author={Yin, Peng and Lai, Haowen and Zhao, Shiqi and Fu, Ruijie and Cisneros, Ivan and Ge, Ruohai and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
-  journal={arXiv preprint arXiv:2207.06965},
-  year={2022}
-}
+@ARTICLE{10035430,
+  author={Yin, Peng and Cisneros, Ivan and Zhao, Shiqi and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal={IEEE Transactions on Robotics}, 
+  title={iSimLoc: Visual Global Localization for Previously Unseen Environments With Simulated Images}, 
+  year={2023},
+  volume={39},
+  number={3},
+  pages={1893-1909},
+  doi={10.1109/TRO.2023.3238201}}
