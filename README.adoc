@@ -1,0 +1,41 @@
+:sectnums:
+:sectnumlevels: 1
+:toc: macro
+:toclevels: 2
+
+ifdef::env-github[]
+image:https://img.youtube.com/vi/ZtqiFfzVPJY/maxresdefault.jpg[link=https://youtu.be/ZtqiFfzVPJY]
+endif::[]
+
+
+ifndef::env-github[]
+video::rAteGra5-xM[youtube]
+endif::[]
+
+== Overview
+AutoMerge is an autonomous multi-agent map merging system, which can provide offline/online data association and global mapping estimation without any GPS assistance. The AutoMerge server platform will provide the service for AutoMerge, where users can upload individual trajectory segments, and AutoMerge can help generate the target global map.
+
+== Supports
+In the release version of AutoMerge, we will support the following LiDAR odometry:
+
+* *https://github.com/hku-mars/FAST_LIO*
+* *https://github.com/TixiaoShan/LIO-SAM*
+* *https://github.com/RobustFieldAutonomyLab/LeGO-LOAM*
+
+And we are also think about expending the supports for visual odometry long large-scale map merging, the potential list includes:
+
+* *https://github.com/UZ-SLAMLab/ORB_SLAM3*
+* *https://github.com/HKUST-Aerial-Robotics/VINS-Mono*
+* *https://github.com/uzh-rpg/rpg_svo_pro_open*
+* *https://github.com/KumarRobotics/msckf_vio*
+
+== Citation
+If you use this code for your research, please cite our papers. *https://arxiv.org/pdf/2207.06965.pdf*
+
+[quote]
+@article{yin2022automerge,
+  title={AutoMerge: A Framework for Map Assembling and Smoothing in City-scale Environments},
+  author={Yin, Peng and Lai, Haowen and Zhao, Shiqi and Fu, Ruijie and Cisneros, Ivan and Ge, Ruohai and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2207.06965},
+  year={2022}
+}
